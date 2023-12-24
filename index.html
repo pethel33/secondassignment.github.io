@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Development Traning</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <section class="container">
+      <!-- left side -->
+      <div class="product_container">
+        <div class="product_logo">
+          <!-- logo wil go here -->
+          <img src="./assests/Logo.png" alt="logo" />
+        </div>
+        <div class="production_details">
+          <h3 class="product_name">For Individuals</h3>
+          <p class="product_description">
+            Start benefiting from the wellness experience. For companies looking
+            on increasing productivity, and improving organization wellness.
+          </p>
+        </div>
+      </div>
+
+      <!-- right side -->
+      <div class="form_container">
+        <form>
+          <div class="formGroup">
+            <div class="input_group">
+              <label for="fullName">Full Name</label>
+              <input
+                type="text"
+                placeholder="Enter First Name"
+                id="fullName"
+                required
+              />
+            </div>
+            <div class="input_group">
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                placeholder="Enter last Name"
+                id="LastName"
+                required
+              />
+            </div>
+          </div>
+          <div class="formGroup">
+            <div class="input_group">
+              <label for="gender">Gender</label>
+              <select id="gender">
+                <option value="">Select here</option>
+                <option value="">male</option>
+                <option value="">female</option>
+              </select>
+            </div>
+            <div class="input_group">
+              <label for="dateOfBirth">Date of Birth</label>
+              <input type="date" id="dateOfBirth" required />
+            </div>
+          </div>
+
+          <div class="formGroup">
+            <div class="input_group">
+              <label for="weight">Weight(WG)</label>
+              <input type="text" id="weight" required />
+            </div>
+            <div class="input_group">
+              <label for="height">Height (CM)</label>
+              <input type="text" id="height" required />
+            </div>
+          </div>
+
+          <div class="formGroup">
+            <div class="input_group_full">
+              <label for="activityLevel">Activity Level</label>
+              <select id="activityLevel">
+                <option value="">Select here</option>
+                <option value="">first level</option>
+                <option value="">second level</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="formGroup">
+            <div class="input_group_full">
+              <label for="password">Password</label>
+              <input type="password" id="password" required />
+            </div>
+          </div>
+
+          <div class="formGroup">
+            <button class="submit" type="submit">Register</button>
+          </div>
+
+          <div class="form_footer">
+            <small class="terms"
+              >By clicking Register, you agree to our
+              <a href="#">Terms of Use</a> and our
+              <a href="#">Privacy Policy</a></small
+            >
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <small class="terms"
+        >By clicking Register, you agree to our <a href="#">Terms of Use</a> and
+        our <a href="#">Privacy Policy</a></small
+      >
+    </footer>
+  </body>
+</html>

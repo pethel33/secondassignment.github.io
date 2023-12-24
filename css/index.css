@@ -1,0 +1,200 @@
+/* desktop styleing */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700; 800&display=swap");
+
+:root {
+  --bg-color: #f7fdfc;
+  --color-black: #000000;
+  --btn-bg-color: #2ec4b6;
+  --btn-bg-colors: #c1d4d2;
+  --text-color: #737373;
+  --bg-colors: #e7e4e4;
+  --background-color: #c1eee9;
+  --color-back: #8f9496;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  gap: 15px;
+  margin: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.form_container {
+  background-color: white;
+}
+
+.product_container,
+.form_container {
+  width: 40%;
+  flex: 1;
+}
+
+@media screen and (max-width: 480px) {
+  .product_container,
+  .form_container {
+    width: 100%;
+    flex: none;
+  }
+}
+
+.product_logo img {
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+.product_name {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.product_description {
+  width: 90%;
+  color: #737373;
+}
+
+@media screen and (max-width: 480px) {
+  .product_description {
+    width: 100%;
+  }
+}
+.form_container {
+  border-radius: 5px;
+}
+.form_container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 0.7rem;
+  padding: 1.7rem;
+  box-shadow: 10px 10px 20px -20px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+
+.form_container .formGroup {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.formGroup .input_group {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.input_group input,
+.input_group_full input,
+.input_group select,
+.input_group_full select {
+  height: 2rem;
+  padding: 8px 4px;
+  font-size: 0.6rem;
+  border: 1px solid #efefef;
+  border-radius: 3px;
+}
+
+.formGroup label {
+  font-weight: bold;
+  color: #393939;
+}
+
+.formGroup .input_group_full {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.password_input {
+  width: 100%;
+  position: relative;
+}
+
+.password_input img {
+  position: absolute;
+  top: 4px;
+  left: 7px;
+}
+
+.formGroup button {
+  background-color: var(--btn-bg-color);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  padding: 10px 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 10px;
+}
+
+.formGroup button:hover {
+  background-color: #0da294;
+}
+
+small a {
+  color: var(--btn-bg-color);
+  text-decoration: underline;
+}
+
+footer {
+  display: none;
+}
+
+/* responsive */
+
+@media screen and (max-width: 480px) {
+  .form_container form {
+    padding: 1.2rem;
+  }
+  .form_container .formGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+  .formGroup .input_group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form_footer {
+    display: none;
+  }
+  footer {
+    display: block;
+    text-align: center;
+    width: 80%;
+    padding: 5px 15px;
+    margin-bottom: 50px;
+  }
+}
